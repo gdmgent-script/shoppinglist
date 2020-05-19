@@ -13,7 +13,7 @@
 Maak een nieuw html-bestand met daarin:
 
 - een inputveld + add-button
-- Een lijst (<ul>...</ul>).
+- Een lijst (`<ul>...</ul>`).
 - Een deleteknop
 Je mag gebruik maken van het framework bootstrap voor basic layout. 
 
