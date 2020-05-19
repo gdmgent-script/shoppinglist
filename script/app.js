@@ -1,55 +1,40 @@
-// DOM
-const shoppingList = document.getElementById('shoppinglist');
-const btnAddItem = document.getElementById('btnadditem');
-const inputAddItem = document.getElementById('additem');
-const btnClearStorage = document.getElementById('btnclearstorage');
+// DOM: get DOM elements
 
-// Empty shoppinglist array
-let existingItems = [];
+// Create Empty shoppinglist array
+
 
 // function Create listitem
 const createListItem = itemContent => {
-  const listItem = document.createElement('li');
-  listItem.innerText = itemContent;
-  return listItem;
+
 };
 
-if (
-  existingItems.length === 0 &&
-  localStorage.getItem('shoppingList') != null
-) {
-  // array empty but storage exist
-  existingItems = localStorage.getItem('shoppingList').split(',');
-  existingItems.forEach(item => {
+
+// check if array is empty and storage exist
+if (  && ) {
+  // array empty but storage exist, assign storage to array
+  
+  //Foreach item in the array fill list with item
+        .forEach(item => {
     // Fill list with storage items
-    shoppingList.appendChild(createListItem(item));
+    
   });
 }
 
+
+//Function add item to shoppinglist
 const addToShoppingList = () => {
-  shoppingList.appendChild(createListItem(inputAddItem.value));
-  // Add item to Array, reassign array to storage
-  existingItems.push(inputAddItem.value);
-  localStorage.setItem('shoppingList', existingItems);
+  //Add input value tot UL
+
+  // Add item to Array and reassign array to storage
+
   // Empty input field
-  inputAddItem.value = '';
 };
 
-// Eventlistener for enter and click
-btnAddItem.addEventListener('click', addToShoppingList);
-inputAddItem.addEventListener('keypress', e => {
-  if (e.code === 'Enter') {
-    addToShoppingList();
-  }
-});
+// Eventlistener for enter and click activate addToShoppingList
+
 
 // Eventlistener delete storage shoppinglist and empty list
-btnClearStorage.addEventListener('click', () => {
-  localStorage.removeItem('shoppingList');
-  // .clear removes all storage
-  // localStorage.clear();
+
+  // remove storage item
 
   // Empty array and ul-shoppinglist
-  existingItems = [];
-  shoppingList.innerHTML = '';
-});

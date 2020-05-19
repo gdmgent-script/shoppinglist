@@ -8,7 +8,7 @@
 - Solution ***solution***
 
 
-## Exercise - Exercise
+## Exercise - guided
 
 Maak een nieuw html-bestand met daarin:
 
