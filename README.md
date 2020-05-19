@@ -8,7 +8,7 @@
 - Solution ***solution***
 
 
-## Exercise - Exercise
+## Exercise - Master
 
 Maak een nieuw html-bestand met daarin:
 
